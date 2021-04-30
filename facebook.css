@@ -1,27 +1,33 @@
-/* google font
+/* importing font from google font */
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 
-/* By Downloading font 
+/* By Downloading font */
 @font-face {
   font-family: kalpana;
   src: url(./Kalpana_ANSI.ttf);
-} */
+}
 
 body {
   margin: 0%;
   padding: 0%;
   background-color: #dfe3ee;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   font-size: 55px;
   color: #1877f2;
   font-family: "Orelega One", cursive;
+  text-align: left;
 }
+
 h2 {
+  margin-top: -30px;
   font-family: kalpana;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: normal;
+  text-align: left;
 }
 .container {
   margin-top: 194px;
@@ -29,17 +35,24 @@ h2 {
   border-radius: 12px;
   text-align: center;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
+}
+
+.left-side {
+  width: 54%;
+}
+
+.right-side {
+  width: 46%;
 }
 
 .form {
   background-color: white;
   width: 70%;
   box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.24);
-  padding: 18px;
+  padding: 26px;
   border-radius: 6px;
 }
+
 .form input {
   border-radius: 8px;
   padding: 20px;
@@ -57,7 +70,7 @@ h2 {
   border: none;
   font-size: 17px;
   color: white;
-
+  cursor: pointer;
   margin-bottom: 15px;
 }
 
@@ -69,25 +82,38 @@ h2 {
   border: none;
   font-size: 17px;
   color: white;
-
+  cursor: pointer;
   margin-top: 34px;
 }
 
 .Forgot {
   color: #1877f2;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 #text {
   float: left;
   margin-top: 20px;
-  margin-left: 86px;
+  margin-left: 30px;
+  color: #1c1e21;
+  font-size: 18px;
 }
+
+/* For Mobile view */
 
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 100%;
   }
 
   .form {
@@ -95,7 +121,7 @@ h2 {
   }
 
   .container {
-    margin: 10px 50px 0 50px;
+    margin: 10px 80px 0 50px;
   }
 
   h1 {
